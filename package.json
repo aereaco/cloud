@@ -1,0 +1,30 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "description": "Aerea Cloud is a web-based Multitenant SaaS platform designed to streamline and manage various business operations. It offers a comprehensive suite of tools, including CMS, CRM, ERP, HRM, Email, Chat, Groupware, and other essential business-related features.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p dev:frontend dev:backend",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "start:frontend": "pnpm --filter frontend start",
+    "start:backend": "pnpm --filter backend start",
+    "build:frontend": "pnpm --filter frontend build",
+    "build:backend": "pnpm --filter backend build",
+    "test:frontend": "pnpm --filter frontend test",
+    "test:backend": "pnpm --filter backend test",
+    "lint:frontend": "pnpm --filter frontend lint",
+    "lint:backend": "pnpm --filter backend lint",
+    "install:all": "pnpm install"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
